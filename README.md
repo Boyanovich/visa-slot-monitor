@@ -1,6 +1,6 @@
 # Visa slot monitor
 
-I wrote this script because checking the visa center website manually every day was driving me crazy. It uses Selenium to check for available slots and pings a Telegram bot if the page changes.
+An automated scraper and notification system for visa appointment slots. Built with Selenium, the script monitors the target website for changes and pushes real-time availability updates directly to a Telegram bot.
 
 The site uses reCAPTCHA. To bypass it without paying for third-party solving APIs, the script selects the audio challenge, downloads the mp3, and uses OpenAI's Whisper model locally to transcribe the audio and pass the captcha. 
 
